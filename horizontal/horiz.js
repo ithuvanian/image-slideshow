@@ -1,6 +1,7 @@
 function showButtons() {
   if ($('.pic').first().hasClass('active')) {
     $('.prev').addClass('hidden');
+    $('.next').removeClass('hidden');
   } else if ($('.pic').last().hasClass('active')) {
     $('.next').addClass('hidden');
   } else {
