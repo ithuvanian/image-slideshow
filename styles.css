@@ -1,0 +1,51 @@
+.overlay {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: 100;
+}
+
+.base {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/*menu bar*/
+
+.nav {
+    margin-top: 2vh;
+    margin-left: 2vw;
+    border-left: 2px solid;
+    position: fixed;
+    z-index: 98;
+}
+
+.nav li {
+    margin: 2vh 0 2vh -2vw;
+    list-style-type: none;
+}
+
+.nav li:hover {
+    cursor: pointer;
+}
+
+.current {
+    font-weight: bold;
+}
+
+.nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.pic {
+  -webkit-box-shadow: -10px -10px 200px 50px #000;
+  box-shadow: -10px -10px 200px 50px #000;
+}
+
+.next, .prev {
+  z-index: 98;
+}
